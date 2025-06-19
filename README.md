@@ -1,5 +1,6 @@
-# thinQL
-LLM-native SQL generation tooling for Go.
+#                         thinQL
+##        Tooling for LLM-native SQL generation in Go.
+
 
 ## 🧠 Philosophy
 
