@@ -1,7 +1,7 @@
 # thinQL
 LLM-native SQL generation tooling for Go.
 
-## 🧠 Phloisophy
+## 🧠 Philosophy
 
 * **Minimalism for humans, pragmatism for agents.**
 * **Make your LLMs happy: Your request lives in the same file as your business logic.**
@@ -16,15 +16,16 @@ Pure control, zero boilerplate
 
 ---
 
-## 🔧 Setup
+## 📦 Installation
 
-A schema generator is included. You don’t write types — thinQL infers them once and uses them at runtime.
+```sh
+go get github.com/yourorg/thinql
+```
 
 ---
+## 🔧  Usage
 
-## 🚀 Usage
-
-### Query with Struct (Only Way You’ll Ever Need)
+A schema generator is included. You don’t write types — thinQL infers them once and uses them at runtime.
 
 ```go
 type User struct {
@@ -37,7 +38,6 @@ err := thinql.Query("SELECT id, name FROM users WHERE id = 1", &user)
 ```
 
 Write SQL. Get data. All statically typed, all in one block.
-
 Perfect for production, amazing for coding agents.
 
 
@@ -53,7 +53,7 @@ Perfect for production, amazing for coding agents.
 
 ---
 
-## 🔮 The Future
+## 🚀 The Future
 
 thinQL is built for the rise of **agentic LLM development** — systems where agents reason, act, and adapt.
 
@@ -63,14 +63,8 @@ Keep your business logic and data access in sync — with nothing lost in transl
 
 ---
 
-## 📦 Installation
 
-```sh
-go get github.com/yourorg/thinql
-```
-
----
 
 ## 🧪 License
 
-MIT
+GPL 3
