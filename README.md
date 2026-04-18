@@ -1,8 +1,8 @@
 #                         thinQL
-##        Tooling for LLM-native SQL generation in Go.
+##        Tooling for LLM-native SQL generation.
 
 
-## 🧠 Philosophy
+## Philosophy
 
 * **Minimalism for humans, pragmatism for agents.**
 * **Make your LLMs happy: Your request lives in the same file as your business logic.**
@@ -11,50 +11,46 @@ thinQL is a streamlined SQL-first library built for LLM-driven and agentic devel
 No ORM. No config. No annotations.
 Just SQL → typed data.
 
-* **You describe your logic in SQL, you get back typed Go.**
-Everytrhing else is abstracted away... bye, bye!
-Pure control, zero boilerplate
+* **You describe your logic in SQL, you get back typed, language-native data structures.**
+Everything else is abstracted away.
+Pure control, zero boilerplate.
 
 ---
 
-## 📦 Installation
+## Languages
 
-```sh
-go get github.com/yourorg/thinql
+| Language | Folder |
+|---|---|
+| Go | [go/](go/) |
+| TypeScript | [ts/](ts/) |
+| Python | [py/](py/) |
+| Lua | [lua/](lua/) |
+| C | [c/](c/) |
+| R5RS Scheme | [r5/](r5/) |
+
+---
+
+## Concept
+
+```
+query(sql, target_type) → typed result
 ```
 
----
-## 🔧  Usage
-
-A schema generator is included. You don’t write types — thinQL infers them once and uses them at runtime.
-
-```go
-type User struct {
-    ID   int    `db:"id"`
-    Name string `db:"name"`
-}
-
-var user User
-err := thinql.Query("SELECT id, name FROM users WHERE id = 1", &user)
-```
-
-Write SQL. Get data. All statically typed, all in one block.
-Perfect for production, amazing for coding agents.
-
+One call. SQL in, typed data out. Schema inference happens once at runtime — you never write mappings by hand.
 
 ---
 
-## ✅ Why thinQL
+## Why thinQL
 
-* ✅ **SQL as the source of truth**
-* ✅ **Zero boilerplate, obvious intent**
-* ✅ **Safe through schema inference**
-* ✅ **Fits LLMs like a glove**
-* ✅ **Built for automation, scales to real use**
+* SQL as the source of truth
+* Zero boilerplate, obvious intent
+* Safe through schema inference
+* Fits LLMs like a glove
+* Built for automation, scales to real use
 
 ---
 
-## 🚀 The Future
+## The Future
 
 thinQL is built for the rise of **agentic LLM development** — systems where agents reason, act, and adapt.
 
@@ -64,8 +60,6 @@ Keep your business logic and data access in sync — with nothing lost in transl
 
 ---
 
-
-
-## 🧪 License
+## License
 
 GPL 3
