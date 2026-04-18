@@ -33,8 +33,7 @@ Pure control, zero boilerplate.
 ## Concept
 
 ```js
-let user = {}
-thinql.query("SELECT id, name FROM users WHERE id = 1", user)
+let user = thinql.query("SELECT id, name FROM users WHERE id = 1")
 ```
 
 ---
