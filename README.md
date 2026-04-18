@@ -30,15 +30,6 @@ Pure control, zero boilerplate.
 
 ---
 
-## Concept
-
-```
-query(sql, target_type) → typed result
-```
-
-One call. SQL in, typed data out. Schema inference happens once at runtime — you never write mappings by hand.
-
----
 
 ## Why thinQL
 
