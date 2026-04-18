@@ -36,6 +36,20 @@ Pure control, zero boilerplate.
 let user = thinql.query("SELECT id, name FROM users WHERE id = 1")
 ```
 
+```go
+var user User
+err := thinql.Query("SELECT id, name FROM users WHERE id = 1", &user)
+```
+
+```lua
+local user = thinql.query("SELECT id, name FROM users WHERE id = 1")
+```
+
+```c
+User user;
+thinql_query("SELECT id, name FROM users WHERE id = 1", &user);
+```
+
 ---
 
 ## Why thinQL
